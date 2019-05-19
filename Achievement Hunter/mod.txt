@@ -1,0 +1,18 @@
+{
+    "name" : "Achievement Hunter",
+    "description" : "Notifies all players about an achievement (or 'objective') you're willing to complete.",
+    "author" : "Jindetta",
+    "contact" : "http://modwork.shop/15179",
+    "version" : "5.00",
+    "blt_version" : 2,
+    "updates" : [
+        { "revision" : 53, "identifier" : "AchiHunter" }
+    ],
+    "hooks" : [
+        { "hook_id" : "lib/setups/setup", "script_path" : "main.lua" },
+        { "hook_id" : "lib/managers/menumanager", "script_path" : "main.lua" },
+        { "hook_id" : "lib/managers/crimenetmanager", "script_path" : "main.lua" },
+        { "hook_id" : "lib/managers/menu/achievementlistgui", "script_path" : "main.lua" },
+        { "hook_id" : "lib/network/matchmaking/networkmatchmakingsteam", "script_path" : "main.lua" }
+    ]
+}
