@@ -324,7 +324,7 @@ if not AchieHunter then
                     if menu:_update_job_variable(id, "achievement", this.getKeyFromLobby(id)) then
                         local job = menu._jobs[id]
                         menu:remove_job(id, true)
-                        menu._jobs[i] = menu:_create_job_gui(data, "server", job.job_x, job.job_y, job.location)
+                        menu._jobs[id] = menu:_create_job_gui(data, "server", job.job_x, job.job_y, job.location)
                     end
                 end
             )
@@ -380,6 +380,7 @@ if not AchieHunter then
                     menu._legends:add_item(
                         {
                             text_id = this.clear.name,
+                            binding = "menu_preview_achievement",
                             func = function()
                                 this.active = nil
                                 QuickMenu:new(
@@ -488,6 +489,7 @@ if not AchieHunter then
                     )
 
                     manager:load_localization_file(self:getLanguage())
+                    manager:set_default_macro("clear_achievement_objective", "c")
                 end
             )
             Hooks:Add(
