@@ -1,16 +1,9 @@
 {
-    "name" : "Achievement Hunter",
-    "description" : "Notifies all players about an achievement (or 'objective') you're willing to complete.",
+    "name" : "Achievement Hunter: Reborn",
+    "description" : "Notifies players in your lobby of playing for achievements/trophies.",
     "author" : "Jindetta",
-    "contact" : "http://modwork.shop/15179",
-    "version" : "5.00",
+    "version" : "1.0",
     "blt_version" : 2,
-    "updates" : [
-        {
-            "revision" : 53,
-            "identifier" : "AchiHunter"
-        }
-    ],
     "hooks" : [
         {
             "hook_id" : "lib/setups/setup",
@@ -32,5 +25,13 @@
             "hook_id" : "lib/network/matchmaking/networkmatchmakingsteam",
             "script_path" : "main.lua"
         }
-    ]
+    ],
+    "updates" : [
+        {
+            "identifier" : "AHReborn-by-Jindetta",
+            "host" : {
+                "meta" : "https://raw.githubusercontent.com/Jindetta/PD2-Achievement-Hunter/master/meta.json"
+            }
+        }
+    ],
 }
